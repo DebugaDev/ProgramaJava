@@ -1,18 +1,18 @@
 public class Pessoa {
 
-    byte numerosInteirosByte = 1;
+    int idade;
 
-    short numerosInteirosShort = 2;
+    float altura;
 
-    int numerosInteirosInt = 3;
+    public int informarIdade() {
+        return idade;
+    }
 
-    long numerosInteirosLong = 4L;
+    public float informarAltura() {
+        return altura;
+    }
 
-    float numerosFlutuantesFloat = 5.0F;
-
-    double numerosFlutuantesDouble = 6.0;
-
-    char caractere = '?';
-
-    boolean condicao = true;
+    public void andar() {
+        System.out.println("Pessoa andando...");
+    }
 }
