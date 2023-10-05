@@ -1,22 +1,61 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("byte: min: %d - max: %d\n", Byte.MIN_VALUE, Byte.MAX_VALUE);
-        System.out.printf("short: min: %d - max: %d\n", Short.MIN_VALUE, Short.MAX_VALUE);
-        System.out.printf("int: min: %d - max: %d\n", Integer.MIN_VALUE, Integer.MAX_VALUE);
-        System.out.printf("long: min: %d - max: %d\n", Long.MIN_VALUE, Long.MAX_VALUE);
-        System.out.printf("float: min: %f - max: %f\n", Float.MIN_VALUE, Float.MAX_VALUE);
-        System.out.printf("double: min: %f - max: %f\n", Double.MIN_VALUE, Double.MAX_VALUE);
+        /*
+        String canal = "Canal";
+        String canal2 = "DebugaDev";
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.idade = 39;
-        pessoa.altura = 1.86F;
+        String newCanal = new String("Debugadev");
 
-        int idadeRetornada = pessoa.informarIdade();
-        float alturaRetornada = pessoa.informarAltura();
+        System.out.println(canal);
+        System.out.println(newCanal);
 
-        System.out.println("Idade: " + pessoa.informarIdade());
-        System.out.println("Altura: " + pessoa.informarAltura());
+        if (canal == canal2) {
+            System.out.println("Iguais");
+        }
 
-        pessoa.andar();
+        if (canal.equals(canal2)) {
+            System.out.println("Iguais com equals");
+        }
+
+        if (canal.equalsIgnoreCase(newCanal)) {
+            System.out.println("Iguais com equals newEquals");
+        }
+
+        String concatStrings = canal + " " + canal2;
+
+        System.out.println(concatStrings);
+
+        String concatMethodStrings = canal.concat(canal2);
+
+        System.out.println(concatMethodStrings);
+
+        System.out.println(canal);
+         */
+
+        int numero = 10;
+        boolean condicao = true;
+
+        String numeroValueOf =  String.valueOf(numero);
+        String condicaoValueOf =  String.valueOf(condicao);
+        String canal = "DebugaDev";
+        String canalTrim = " Debuga Dev ";
+        String canalEmpty = "";
+
+        System.out.println(numeroValueOf);
+        System.out.println(condicaoValueOf);
+        System.out.println(condicaoValueOf.length());
+        System.out.println(condicaoValueOf.charAt(2));
+        System.out.println(canal.indexOf("D", 1));
+        System.out.println(canal.lastIndexOf("D", 5));
+        System.out.println(canal.substring(5));
+        System.out.println(canal.substring(5, 7));
+        System.out.println(canal.toUpperCase());
+        System.out.println(canal.toLowerCase());
+        System.out.println(canalTrim.trim());
+        System.out.println(canalEmpty.isEmpty());
+        System.out.println(canal.startsWith("Debi"));
+        System.out.println(canal.endsWith("tev"));
+        System.out.println(canal.replace("De", "Ra"));
+        System.out.println(canal.replaceAll("De[b,v]", "Rai"));
     }
 }
