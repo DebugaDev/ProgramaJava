@@ -1,73 +1,39 @@
 public class Main {
     public static void main(String[] args) {
 
-        Integer idadePedro = 21;
-        Integer idadeJoao = 21;
-        String nome = "Pedro";
+        /*
+        ++ -> Pré-Fixado e o Pós-fixado
+        -- -> Pré-Fixado e o Pós-fixado
+        ! -> Operador complementar (boolean)
+        * */
 
-        if (nome.contains("ed")) {
-            System.out.println("Contem");
-        }
+        int idade = 0;
 
-        if (nome.contains("edx") || nome.startsWith("X") || idadeJoao.equals(idadePedro)) {
-            System.out.println("Bem Vindo Pedro");
-        }
+        idade = idade + 1;
 
-        int dia = 10;
+        System.out.println("Incremento Idade Pré-Fixado: " + ++idade);
+        System.out.println("Incremento Idade: " + idade++);
+        System.out.println("Incremento Idade Pós-Fixado: " + idade);
+        System.out.println("----------------------------------------");
+        System.out.println("Decremento Idade Pré-Fixado: " + --idade);
+        System.out.println("Decremento Idade: " + idade--);
+        System.out.println("Decremento Idade Pós-Fixado: " + idade);
+        System.out.println("----------------------------------------");
 
-        switch (dia) {
-            case 1:
-                System.out.println("Segunda");
-                break;
-            case 2:
-                System.out.println("Terça");
-                break;
-            case 3:
-                System.out.println("Quarta");
-                break;
-            case 4:
-                System.out.println("Quinta");
-                break;
-            case 5:
-                System.out.println("Sexta");
-                break;
-            case 6:
-                System.out.println("Sabado");
-                break;
-            case 7:
-                System.out.println("Domingo");
-                break;
-            default:
-                System.out.println("Dia da semana inválido");
-        }
+        boolean condicao = false;
+        System.out.println("Operador complementar: " + !condicao);
+        System.out.println("----------------------------------------");
 
-        String diaSemana = "Pedro";
+        idade += 3;
+        System.out.println("Soma: " + idade);
 
-        switch (diaSemana) {
-            case "Segunda":
-                System.out.println("1");
-                break;
-            case "Terça":
-                System.out.println("2");
-                break;
-            case "Quarta":
-                System.out.println("3");
-                break;
-            case "Quinta":
-                System.out.println("4");
-                break;
-            case "Sexta":
-                System.out.println("5");
-                break;
-            case "Sabado":
-                System.out.println("6");
-                break;
-            case "Domingo":
-                System.out.println("7");
-                break;
-            default:
-                System.out.println("Dia da semana inválido");
-        }
+        idade -= 2;
+        System.out.println("Subtração: " + idade);
 
+        idade *= 5;
+        System.out.println("Multiplicação: " + idade);
+
+        idade /= 2;
+        System.out.println("Divisão: " + idade);
     }
 }
