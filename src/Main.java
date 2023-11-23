@@ -1,22 +1,26 @@
 public class Main {
     public static void main(String[] args) {
 
-        int valor = 50;
+        int[] inteiros = {1,2,3,4,5,6,7,8,9,10};
 
-        System.out.println("Inicio While");
+        System.out.println("Inicio FOREACH");
 
-        while(valor >= 0) {
+        for(int valor = 50; valor >= 0; valor--) {
             System.out.println("Valor: " + valor);
 
-            valor--;
+            if (valor == 10) {
+                break;
+            }
         }
 
-        do {
-            System.out.println("Valor: " + valor);
+        for (int inteiro : inteiros) {
+            System.out.println("Int: " + inteiro);
+        }
 
-            valor--;
-        } while(valor >= 0);
+        for (int i = 0; i < inteiros.length; i++) {
+            System.out.println("Int: " + inteiros[i]);
+        }
 
-        System.out.println("Fim While");
+        System.out.println("Fim FOREACH");
     }
 }
